@@ -1,4 +1,6 @@
 import re
+import glob
+import os
 
 def generate_no_solution(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as f:
@@ -7,7 +9,8 @@ def generate_no_solution(input_file, output_file):
     output_lines = []
     for line in lines:
         if line.startswith('# '):
-            output_lines.append('# Mathe Übungen (Aufgabenblatt)\n')
+            title = line.strip('# \n')
+            output_lines.append(f'# {title} (Aufgabenblatt)\n')
         elif line.startswith('| Nr.'):
             output_lines.append('| Nr. | Aufgabe | Lösung |\n')
         elif line.startswith('| :---'):
@@ -27,4 +30,9 @@ def generate_no_solution(input_file, output_file):
         f.writelines(output_lines)
 
 if __name__ == '__main__':
-    generate_no_solution('LEKTION1_AUFGABEN_MIT_LOESUNG.md', 'LEKTION1_AUFGABEN.md')
+    # Find all source files matching the pattern
+    files = glob.glob('LEKTION*_MIT_LOESUNG.md')
+    for input_file in files:
+        output_file = input_file.replace('_MIT_LOESUNG.md', '.md')
+        print(f"Generating {output_file} from {input_file}...")
+        generate_no_solution(input_file, output_file)

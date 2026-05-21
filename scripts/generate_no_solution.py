@@ -27,4 +27,4 @@ def generate_no_solution(input_file, output_file):
         f.writelines(output_lines)
 
 if __name__ == '__main__':
-    generate_no_solution('math_exercises.md', 'math_exercises_no_solution.md')
+    generate_no_solution('LEKTION1_AUFGABEN_MIT_LOESUNG.md', 'LEKTION1_AUFGABEN.md')

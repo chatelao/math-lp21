@@ -1,5 +1,5 @@
 \newpage
-# Lektion 3: Logik - Zahlenfolgen und Termvergleiche
+# Lektion 5: Logik - Zahlenfolgen und Termvergleiche
 
 | Nr. | Aufgabe | Lösung | Bonus: Exakte Struktur |
 | :--- | :----------------- | :------------ | :--------------------------------------------------------- |
@@ -127,7 +127,7 @@
 | 122 | $0 \cdot b + c =$ | $c$ | $0 + c = c$ |
 
 \newpage
-# Lektion 4: Logik - Gleichungen und Proportionalität
+# Lektion 6: Logik - Gleichungen und Proportionalität
 
 | Nr. | Aufgabe | Lösung | Bonus: Exakte Struktur |
 | :--- | :----------------- | :------------ | :--------------------------------------------------------- |

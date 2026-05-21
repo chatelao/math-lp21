@@ -1,5 +1,5 @@
 \newpage
-# Lektion 5: Binomische Formeln und Klammerprodukte
+# Lektion 7: Binomische Formeln und Klammerprodukte
 
 | Nr. | Aufgabe | Lösung | Bonus: Exakte Struktur |
 | :--- | :----------------- | :------------ | :--------------------------------------------------------- |

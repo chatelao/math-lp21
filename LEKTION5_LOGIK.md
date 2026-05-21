@@ -1,5 +1,5 @@
 \newpage
-# Lektion 3: Logik - Zahlenfolgen und Termvergleiche (Aufgabenblatt)
+# Lektion 5: Logik - Zahlenfolgen und Termvergleiche (Aufgabenblatt)
 
 | Nr. | Aufgabe | Lösung |
 | :--- | :--------------------------- | :------------------------------------------- |
@@ -127,7 +127,7 @@
 | 122 | $0 \cdot b + c =$ | |
 
 \newpage
-# Lektion 4: Logik - Gleichungen und Proportionalität (Aufgabenblatt)
+# Lektion 6: Logik - Gleichungen und Proportionalität (Aufgabenblatt)
 
 | Nr. | Aufgabe | Lösung |
 | :--- | :--------------------------- | :------------------------------------------- |

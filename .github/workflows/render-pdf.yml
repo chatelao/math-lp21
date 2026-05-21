@@ -16,7 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Render PDF
+      - name: Generate No Solution MD
+        run: python3 scripts/generate_no_solution.py
+
+      - name: Render PDF (With Solutions)
         uses: docker://pandoc/extra:latest
         with:
           args: >-
@@ -24,14 +27,26 @@ jobs:
             -o math_exercises.pdf
             --pdf-engine=pdflatex
 
-      - name: Upload PDF
+      - name: Render PDF (No Solutions)
+        uses: docker://pandoc/extra:latest
+        with:
+          args: >-
+            math_exercises_no_solution.md
+            -o math_exercises_no_solution.pdf
+            --pdf-engine=pdflatex
+
+      - name: Upload PDFs
         uses: actions/upload-artifact@v4
         with:
-          name: math-exercises-pdf
-          path: math_exercises.pdf
+          name: math-exercises-pdfs
+          path: |
+            math_exercises.pdf
+            math_exercises_no_solution.pdf
 
       - name: Release
         uses: softprops/action-gh-release@v2
         if: github.event_name == 'release'
         with:
-          files: math_exercises.pdf
+          files: |
+            math_exercises.pdf
+            math_exercises_no_solution.pdf

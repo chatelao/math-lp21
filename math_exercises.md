@@ -102,3 +102,25 @@
 | 98 | $-z-z=$ | $-2z$ | $-1z-1z=-2z=-2\cdot z$ |
 | 99 | $a\cdot 1\cdot b=$ | $ab$ | $a\cdot 1\cdot b=1ab=1\cdot a\cdot b$ |
 | 100 | $x\cdot 0\cdot y=$ | $0$ | $x\cdot 0\cdot y=0xy=0\cdot x\cdot y$ |
+| 101 | $a+b+c=$ | $a+b+c$ | $1a+1b+1c=1a+1b+1c$ |
+| 102 | $x+y+z=$ | $x+y+z$ | $1x+1y+1z=1x+1y+1z$ |
+| 103 | $3a+a=$ | $4a$ | $3a+1a=4a=4\cdot a$ |
+| 104 | $3b+b=$ | $4b$ | $3b+1b=4b=4\cdot b$ |
+| 105 | $3c+c=$ | $4c$ | $3c+1c=4c=4\cdot c$ |
+| 106 | $a-2a=$ | $-a$ | $1a-2a=-1a=-1\cdot a$ |
+| 107 | $b-2b=$ | $-b$ | $1b-2b=-1b=-1\cdot b$ |
+| 108 | $c-2c=$ | $-c$ | $1c-2c=-1c=-1\cdot c$ |
+| 109 | $a-a-a=$ | $-a$ | $1a-1a-1a=0a-1a=-1a=-1\cdot a$ |
+| 110 | $b-b-b=$ | $-b$ | $1b-1b-1b=0b-1b=-1b=-1\cdot b$ |
+| 111 | $x-x-x=$ | $-x$ | $1x-1x-1x=0x-1x=-1x=-1\cdot x$ |
+| 112 | $abc=$ | $abc$ | $abc=a\cdot b\cdot c$ |
+| 113 | $xyz=$ | $xyz$ | $xyz=x\cdot y\cdot z$ |
+| 114 | $2a+b-a=$ | $a+b$ | $2a+1b-1a=1a+1b$ |
+| 115 | $2b+c-b=$ | $b+c$ | $2b+1c-1b=1b+1c$ |
+| 116 | $2x+y-x=$ | $x+y$ | $2x+1y-1x=1x+1y$ |
+| 117 | $a+2a+3a=$ | $6a$ | $1a+2a+3a=6a=6\cdot a$ |
+| 118 | $x+2x+3x=$ | $6x$ | $1x+2x+3x=6x=6\cdot x$ |
+| 119 | $a\cdot b\cdot 0=$ | $0$ | $a\cdot b\cdot 0=0ab=0\cdot a\cdot b$ |
+| 120 | $x\cdot y\cdot 1=$ | $xy$ | $x\cdot y\cdot 1=1xy=1\cdot x\cdot y$ |
+| 121 | $a-b+b=$ | $a$ | $1a-1b+1b=1a+0b=1\cdot a$ |
+| 122 | $x-y+y=$ | $x$ | $1x-1y+1y=1x+0y=1\cdot x$ |

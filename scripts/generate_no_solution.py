@@ -11,7 +11,7 @@ def generate_no_solution(input_file, output_file):
         elif line.startswith('| Nr.'):
             output_lines.append('| Nr. | Aufgabe | Lösung |\n')
         elif line.startswith('| :---'):
-            output_lines.append('| :--- | :--- | :--- |\n')
+            output_lines.append('| :--- | :--------------------------- | :------------------------------------------- |\n')
         elif line.startswith('|'):
             # It's a table row
             parts = line.split('|')

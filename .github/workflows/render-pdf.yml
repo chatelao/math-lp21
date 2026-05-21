@@ -23,16 +23,16 @@ jobs:
         uses: docker://pandoc/extra:latest
         with:
           args: >-
-            math_exercises.md
-            -o math_exercises.pdf
+            LEKTION1_AUFGABEN_MIT_LOESUNG.md
+            -o LEKTION1_AUFGABEN_MIT_LOESUNG.pdf
             --pdf-engine=pdflatex
 
       - name: Render PDF (No Solutions)
         uses: docker://pandoc/extra:latest
         with:
           args: >-
-            math_exercises_no_solution.md
-            -o math_exercises_no_solution.pdf
+            LEKTION1_AUFGABEN.md
+            -o LEKTION1_AUFGABEN.pdf
             --pdf-engine=pdflatex
 
       - name: Upload PDFs
@@ -40,13 +40,13 @@ jobs:
         with:
           name: math-exercises-pdfs
           path: |
-            math_exercises.pdf
-            math_exercises_no_solution.pdf
+            LEKTION1_AUFGABEN_MIT_LOESUNG.pdf
+            LEKTION1_AUFGABEN.pdf
 
       - name: Release
         uses: softprops/action-gh-release@v2
         if: github.event_name == 'release'
         with:
           files: |
-            math_exercises.pdf
-            math_exercises_no_solution.pdf
+            LEKTION1_AUFGABEN_MIT_LOESUNG.pdf
+            LEKTION1_AUFGABEN.pdf

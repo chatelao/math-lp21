@@ -2,12 +2,16 @@ name: Render PDF
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, math-exercises-pdf-16831532306416782251 ]
+  release:
+    types: [created]
   workflow_dispatch:
 
 jobs:
   render:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,3 +29,9 @@ jobs:
         with:
           name: math-exercises-pdf
           path: math_exercises.pdf
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: github.event_name == 'release'
+        with:
+          files: math_exercises.pdf

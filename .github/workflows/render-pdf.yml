@@ -25,10 +25,11 @@ jobs:
           args: >-
             LEKTION1_AUFGABEN_MIT_LOESUNG.md
             LEKTION2_AUFGABEN_MIT_LOESUNG.md
-            LEKTION_LOGIK_MIT_LOESUNG.md
+            LEKTION3_LOGIK_MIT_LOESUNG.md
             LEKTION5_AUFGABEN_MIT_LOESUNG.md
             -o MATHE_AUFGABEN_MIT_LOESUNG.pdf
             --pdf-engine=pdflatex
+            -V papersize=a4
 
       - name: Render PDF (No Solutions)
         uses: docker://pandoc/extra:latest
@@ -36,10 +37,11 @@ jobs:
           args: >-
             LEKTION1_AUFGABEN.md
             LEKTION2_AUFGABEN.md
-            LEKTION_LOGIK.md
+            LEKTION3_LOGIK.md
             LEKTION5_AUFGABEN.md
             -o MATHE_AUFGABEN.pdf
             --pdf-engine=pdflatex
+            -V papersize=a4
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v4

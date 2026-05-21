@@ -1,4 +1,4 @@
-# Mathe Übungen
+# Lektion 1: Grundlagen
 
 | Nr. | Aufgabe | Lösung | Bonus: Exakte Struktur |
 | :--- | :----------------- | :------------ | :--------------------------------------------------------- |

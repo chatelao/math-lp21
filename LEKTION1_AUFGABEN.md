@@ -1,4 +1,4 @@
-# Mathe Übungen (Aufgabenblatt)
+# Lektion 1: Grundlagen (Aufgabenblatt)
 
 | Nr. | Aufgabe | Lösung |
 | :--- | :--------------------------- | :------------------------------------------- |

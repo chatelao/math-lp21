@@ -24,7 +24,8 @@ jobs:
         with:
           args: >-
             LEKTION1_AUFGABEN_MIT_LOESUNG.md
-            -o LEKTION1_AUFGABEN_MIT_LOESUNG.pdf
+            LEKTION2_AUFGABEN_MIT_LOESUNG.md
+            -o MATHE_AUFGABEN_MIT_LOESUNG.pdf
             --pdf-engine=pdflatex
 
       - name: Render PDF (No Solutions)
@@ -32,7 +33,8 @@ jobs:
         with:
           args: >-
             LEKTION1_AUFGABEN.md
-            -o LEKTION1_AUFGABEN.pdf
+            LEKTION2_AUFGABEN.md
+            -o MATHE_AUFGABEN.pdf
             --pdf-engine=pdflatex
 
       - name: Upload PDFs
@@ -40,13 +42,13 @@ jobs:
         with:
           name: math-exercises-pdfs
           path: |
-            LEKTION1_AUFGABEN_MIT_LOESUNG.pdf
-            LEKTION1_AUFGABEN.pdf
+            MATHE_AUFGABEN_MIT_LOESUNG.pdf
+            MATHE_AUFGABEN.pdf
 
       - name: Release
         uses: softprops/action-gh-release@v2
         if: github.event_name == 'release'
         with:
           files: |
-            LEKTION1_AUFGABEN_MIT_LOESUNG.pdf
-            LEKTION1_AUFGABEN.pdf
+            MATHE_AUFGABEN_MIT_LOESUNG.pdf
+            MATHE_AUFGABEN.pdf

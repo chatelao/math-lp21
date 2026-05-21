@@ -1,5 +1,5 @@
 \newpage
-# Lektion 3: Binomische Formeln und Klammerprodukte (Aufgabenblatt)
+# Lektion 5: Binomische Formeln und Klammerprodukte (Aufgabenblatt)
 
 | Nr. | Aufgabe | Lösung |
 | :--- | :--------------------------- | :------------------------------------------- |
